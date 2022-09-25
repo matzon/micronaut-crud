@@ -1,0 +1,10 @@
+version: "3.8"
+
+services:
+  application:
+    image: eclipse-temurin:17
+    ports:
+      - "8080:8080"
+    volumes:
+      - ./target:/opt/app/
+    entrypoint: ["java", "-jar", "/opt/app/micronaut-crud-1.0-SNAPSHOT.jar"]
