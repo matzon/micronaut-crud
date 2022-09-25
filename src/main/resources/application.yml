@@ -1,0 +1,15 @@
+datasources:
+  default:
+    password: ''
+    driverClassName: org.hsqldb.jdbc.JDBCDriver
+    url: jdbc:hsqldb:mem:testdb;DB_CLOSE_DELAY=-1
+    username: sa
+jpa:
+  default:
+    entity-scan: dk.matzon.proto.crud.model
+    properties:
+      hibernate:
+        hbm2ddl:
+          auto: update
+        show_sql: true
+        format_sql: true
