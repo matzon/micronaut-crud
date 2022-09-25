@@ -1,2 +1,4 @@
 # Project exclude paths
 /target/
+/tomcat.8080/
+/.idea/
